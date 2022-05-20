@@ -9,7 +9,7 @@ The extracted features are then outputted via UART to a serial terminal for view
 We collected 2 sets of 5-second training data for each of following the 5 gestures: Rest (0), Hand Closed (1), Hand Open (1), Point Index (3), and Devil Horns (4).
 Between each recording session, the MyoWare sensors were removed and replaced to introduce sensor shifts in our training data to improve robustness.
 The features for each gesture were recorded and saved in separate csv files for uploading to our LDA model that was built in Python.
-Our Python program combines the uploaded training data into 1 feature matrix and feeds it into the SciKit Learn Linear Discriminant Analysis model.
+Our Python program combines the uploaded training data into 1 feature matrix and feeds it into the SciKit-Learn Linear Discriminant Analysis model.
 Our LDA model is trained and tested with 100-fold cross-validation without shuffling, achieving an accuracy of 85%.
 We also used testing feature data from shifted sensors to make predictions with our model and test its robustness, achieving a comparable 82% accuracy.
 Finally, our model's predicted gesture output can be used to control a robotic arm to form the predicted gesture
