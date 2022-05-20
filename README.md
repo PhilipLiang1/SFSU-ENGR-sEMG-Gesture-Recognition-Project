@@ -4,7 +4,7 @@ This Gesture Recognition with sEMG Project uses the SFSU ENGR478 sample ADC proj
 It was modified and expanded upon for the development of our project.
 Our project collects training and testing data from 4 MyoWare sEMG sensors placed radially around the forearm with the reference node at the elbow joint.
 The raw sEMG data is captured by the ADC of a Tiva TM4C123G Microcontroller to perform feature extraction.
-The sampling rate of our ADC is 1000 Hz. Every 50ms, our program extracts 4 time-domain features (MAV, ZC, WL, T) from each channel of the recorded raw sEMG.
+The sampling rate of our ADC is 1000 Hz. Every 50 ms, our program extracts 4 time-domain features (MAV, ZC, WL, T) from each channel of the recorded raw sEMG.
 The extracted features are then outputted via UART to a serial terminal for viewing and recording at approximately 320 Hz.
 We collected 2 sets of 5-second training data for each of following the 5 gestures: Rest (0), Hand Closed (1), Hand Open (1), Point Index (3), and Devil Horns (4).
 Between each recording session, the MyoWare sensors were removed and replaced to introduce sensor shifts in our training data to improve robustness.
