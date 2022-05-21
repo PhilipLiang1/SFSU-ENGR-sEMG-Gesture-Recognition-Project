@@ -1,6 +1,6 @@
 # SFSU-ENGR-sEMG-Gesture-Recognition-Project
 Gesture Recognition with sEMG Engineering Project by Philip Liang and Benediction Bora.
-This Gesture Recognition with sEMG Project uses the SFSU ENGR478 sample ADC project developed by Dr. Xiaorong Zhang as the base outline and setup. 
+This Gesture Recognition with sEMG Project uses the SFSU ENGR478 sample ADC_temperature project developed by Dr. Xiaorong Zhang as the base outline and setup. 
 It was modified and expanded upon for the development of our project.
 Our project collects training and testing data from 4 MyoWare sEMG sensors placed radially around the forearm with the reference node at the elbow joint.
 The raw sEMG data is captured by the ADC of a Tiva TM4C123G Microcontroller to perform feature extraction.
